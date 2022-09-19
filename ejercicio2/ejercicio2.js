@@ -13,7 +13,7 @@ function insertar(){
 let numeroEmp = numeroEmpleado + 1;
 numeroEmpleado += 1;
 
-
+let tr = document.createElement("tr");
 for(let i = 1; i<tabla.getElementsByTagName("tr").length; i++){
     arrayDeDNI.push(tabla.getElementsByTagName("tr")[i].getElementsByTagName("td")[1].innerText);
 }
