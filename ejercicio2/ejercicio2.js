@@ -10,13 +10,6 @@ let td = document.createElement("td");
 
 function insertar(){
 
-
-    
-let tabla = document.getElementById("tabla");
-let tr = document.createElement("tr");
-let td = document.createElement("td");
-
-
 let numeroEmp = numeroEmpleado + 1;
 numeroEmpleado += 1;
 
@@ -64,13 +57,7 @@ document.getElementById("numeroEmp").innerText = numeroEmp;
 }
 
 function eliminar(){
-       
-    
-    
-    
     let dniEmp = prompt("DNI");
-
-
 
     for(let i = 1; i<tabla.getElementsByTagName("tr").length; i++){
         arrayDeDNI.push(tabla.getElementsByTagName("tr")[i].getElementsByTagName("td")[1].innerText);
@@ -91,12 +78,6 @@ function eliminar(){
     else{
                 alert("No existe el empleado")
             }
-
-    
-
-    
-
-
 
 }
 
@@ -131,5 +112,3 @@ function modificar(){
             }
 
 }
-
-console.log(tabla.getElementsByTagName("tr")[1].getElementsByTagName("td")[1].innerText)
