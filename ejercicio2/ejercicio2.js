@@ -2,8 +2,9 @@
 let numeroEmpleado = 3;
 let arrayDeDNI = [];
 for(let i = 0; i<tabla.getElementsByTagName("tr").length; i++){
-    arrayDeDNI.push(tabla.getElementsByTagName("tr")[i]);
+    arrayDeDNI.push(tabla.getElementsByTagName("tr")[i].getElementsByTagName("td")[1]);
 }
+
 
 
 function insertar(){
